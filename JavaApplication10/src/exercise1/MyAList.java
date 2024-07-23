@@ -9,13 +9,13 @@ public class MyAList<E> implements Iterable<E>
 
         
         
-        //constructors
-    public MyAList() {
-    }
 
-    public MyAList(ArrayList<E> list) {
-        this.list = list;
+    public MyAList() {
+        this.list = new ArrayList<>(); 
     }
+    
+    
+    
 
         
         //methods
@@ -24,10 +24,10 @@ public class MyAList<E> implements Iterable<E>
         };
         
         public void addAll(MyAList<E> items){
-            int index = items.size();
             
-            for (int i =0; i >list.size(); i++){
-                list.add(items.get(index));  
+            
+            for (int i =0; i < items.size(); i++){
+                list.add(items.get(i));  
             }
             
         };
